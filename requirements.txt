@@ -1,0 +1,9 @@
+Flask
+Flask-RESTful
+Flask-JWT
+Flask-SQLAlchemy
+Werkzeug
+Jinja2
+SQLAlchemy
+uwsgi
+psycopg2
