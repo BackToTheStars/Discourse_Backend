@@ -13,7 +13,7 @@ class SchoolModel(db.Model):
     self.schoolName = schoolName
 
   def json(self):
-    return {'schoolName': self.schoolName, 'games': [game.json() for game in self.games.all()]} # added in GameModel
+    return {'schoolName': self.schoolName, 'id': self.id, 'games': [game.json() for game in self.games.all()]} # added in GameModel
 
   @classmethod                                    
   def find_by_name(cls, schoolName):
