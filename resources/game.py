@@ -12,7 +12,7 @@ class Game(Resource):
 # parser.add_argument('turns', type=str, required=True)
   parser.add_argument('school_id', type=int, required=True, help='every game needs a school_id')
 
-  @jwt_required() 
+#  @jwt_required() 
   def get(self, name):
     game = GameModel.find_by_name(name)
     if game:
